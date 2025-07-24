@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+
+/*---------------------------------
+MAIN CONTENT
+---------------------------------*/
+.thanks__wrapper .thanks__container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0px auto;
+    text-align: center;
+}
+
+.thanks__content {
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    min-height: 100vh;
+    border-radius: 8px;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* 背景の透かし文字 */
+.thanks__background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+    width: 100%;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 280px;
+    line-height: 1;
+    letter-spacing: 0;
+    color: #8b79690d;
+}
+
+/* メッセージ */
+
+.thanks__content h2 {
+    color: #8b7969;
+    font-family: Inika;
+    font-weight: bold;
+    font-style: normal;
+    font-size: 25px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/* HOMEリンク */
+.thanks__button {
+    padding: 10px 40px;
+    display: inline-block;
+    background-color: #82756a;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/*---------------------------------
+MEDIA QUERY
+---------------------------------*/
+
+/* タブレット */
+@media (max-width: 1200px) {
+    .thanks__background-text {
+        font-size: 150px;
+    }
+}
+
+/* スマートフォン */
+@media (max-width: 768px) {
+    .thanks__background-text {
+        font-size: 80px;
+    }
+
+    .thanks__content h2 {
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,599 @@
+@import url("https://fonts.googleapis.com/css2?family=Inika:wght@400;700&display=swap");
+
+/*---------------------------------
+HEADER
+---------------------------------*/
+.header {
+    width: 100%;
+    height: 100px;
+    background: #fff;
+    border-bottom: 1px solid #e0dfde;
+    position: relative;
+}
+
+.header__container {
+    max-width: 1512px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    position: relative;
+    padding: 0 4%;
+}
+
+.header__title {
+    font-family: "Inika";
+    font-weight: 400;
+    font-style: normal;
+    width: 65%;
+    font-size: 40px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    color: #8b7969;
+}
+
+.header__form--logout {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 20px;
+    display: inline-block;
+    background-color: #f3f7f6;
+    color: #d9c6b5;
+    text-decoration: none;
+    border: solid 1px #d9c6b5;
+    transition: background 0.3s;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.header__form--logout:hover {
+    cursor: pointer;
+    background-color: #e4dcd7;
+    color: #fff;
+}
+
+/*---------------------------------
+MAIN CONTENT
+---------------------------------*/
+.search__wrapper .search__container {
+    max-width: 1512px;
+    width: 100%;
+    margin: 0px auto;
+    padding: 10px 0 40px 0;
+}
+
+.search__content {
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    border-radius: 8px;
+    max-width: 1200px;
+}
+
+/*---------------------------------
+SEARCH FORM HEADER
+---------------------------------*/
+
+.search-form__header {
+    max-width: 1512px;
+    margin: auto;
+    padding: 10px 0;
+}
+
+.search-form__header-title {
+    text-align: center;
+    color: #8b7969;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 35px;
+    line-height: 1;
+    letter-spacing: 0;
+}
+
+/*---------------------------------
+SEARCH FORM BODY
+---------------------------------*/
+.search-form {
+    width: 100%;
+}
+
+.search-form__container {
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-form__field input,
+.search-form__field select {
+    height: 45px;
+    padding: 0 10px;
+    width: 100%;
+    border: 1px solid #e3ded9;
+    background-color: #f4f4f4;
+    color: #8b7969;
+}
+
+/* 検索フィールドごとの幅調整 */
+.search-form__field--keyword {
+    width: 28%;
+}
+.search-form__field--gender {
+    width: 10%;
+}
+.search-form__field--category {
+    width: 17%;
+}
+.search-form__field--date {
+    width: 10%;
+}
+
+/* ボタン */
+.search-form__actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    width: 25%;
+    height: 45px;
+}
+
+.search-form__button-search {
+    padding: 10px;
+    background-color: #8b7969;
+    border: 1px solid #8b7969;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+}
+
+.search-form__button-reset {
+    padding: 12px 5px;
+    background-color: #d9c6b5;
+    border: 1px solid #d9c6b5;
+    color: white;
+    cursor: pointer;
+    width: 40%;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*---------------------------------
+EXPORT
+---------------------------------*/
+.admin-actions {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.admin-actions__button-export {
+    background-color: #e1dbd699;
+    height: 40px;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    color: #8b7969;
+    padding: 10px 20px;
+    border: none;
+}
+
+/*---------------------------------
+PAGINATE
+---------------------------------*/
+.pagination {
+    border: solid 1px #e0dfde;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+p {
+    margin: 0;
+}
+
+a:hover {
+    opacity: 0.6;
+}
+
+.pagination ul {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #dcd7d3;
+    border-radius: 0;
+}
+
+.pagination ul li {
+    border-right: 1px solid #dcd7d3;
+}
+
+.pagination ul li:last-child {
+    border-right: 0;
+}
+
+.btn {
+    position: relative;
+    color: #8b7969;
+    text-align: center;
+    line-height: 44px;
+    width: 40px;
+    height: 40px;
+    margin: auto;
+    display: block;
+    text-decoration: none;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+.opt {
+    color: #8b7969;
+    font-size: 17px;
+    width: 40px;
+    background: none;
+}
+.active,
+.active:hover {
+    background: #8b7969;
+    color: white;
+}
+/* 省略の・・の設定 */
+.dots {
+    color: #8b7969;
+}
+.active:hover,
+.dots:hover {
+    opacity: 1;
+}
+
+/*---------------------------------
+SEARCH RESULT TABLE
+---------------------------------*/
+.search-result__table {
+    width: 100%;
+    max-width: 1200px;
+    margin: 30px 0;
+}
+
+.search-result__table tr {
+    height: 70px;
+    border: solid 1px #e0dfde;
+}
+
+.search-result__table th {
+    background-color: #8b7969;
+    color: white;
+    font-family: Inika;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0;
+    text-align: left;
+    padding: 0 25px;
+}
+
+.search-result__table td {
+    color: #8b7969;
+    font-family: Inika;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 0%;
+    text-align: left;
+    padding: 0 25px;
+}
+
+.search-result__table button {
+    color: #d9c6b5;
+    border: solid 1px #d9c6b5;
+    background-color: #f4f4f4;
+    padding: 5px 15px;
+}
+
+/*---------------------------------
+MODAL WINDOW
+---------------------------------*/
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1000;
+}
+
+/* モーダル本体 */
+.modal__content {
+    background: #fff;
+    width: 500px;
+    margin: 5% auto;
+    padding: 50px 30px;
+    border-radius: 0;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    position: relative;
+    font-family: "sans-serif";
+}
+
+/* モーダル閉じるボタン */
+.modal__close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #666;
+}
+
+/* 情報テーブル */
+.info-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 40px;
+}
+.info-table td:first-child {
+    width: 160px;
+    font-weight: bold;
+    vertical-align: top;
+    padding: 6px 0;
+}
+.info-table td:last-child {
+    padding: 6px 0;
+}
+
+/* 削除ボタン */
+.btn-delete {
+    display: inline-block;
+    background-color: #ba370d;
+    color: white;
+    border: none;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-radius: 0;
+    font-size: 14px;
+}
+
+/*---------------------------------
+MEDIA QUERY
+---------------------------------*/
+/* タブレット */
+
+@media (max-width: 1200px) {
+    .search-form__button-reset {
+        width: 40%;
+    }
+
+    .search-form__button-search {
+        width: 40%;
+    }
+
+    .search-form__container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .search-form__field,
+    .search-form__actions button,
+    .search-form__actions a,
+    .search-form__actions select {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    /* ボタン2つを並べるのでflex */
+    .search-form__actions {
+        display: flex;
+        gap: 8px;
+    }
+    .search-form__actions button,
+    .search-form__actions a {
+        flex: 1;
+    }
+
+    .search__content {
+        width: 98%;
+    }
+
+    .search-result__table td {
+        padding: 0 15px;
+    }
+
+    .admin-actions__button-export {
+        font-size: 14px;
+    }
+
+    .search-form__button-reset {
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+    .search-form__button-search {
+        padding: 12px 5px;
+        font-size: 14px;
+    }
+    .admin-actions {
+        margin: 0;
+    }
+    .search-result__table th {
+        font-size: 16px;
+        font-weight: bold;
+        padding: 0 10px;
+    }
+    .search-result__table td {
+        font-size: 16px;
+        padding: 0 10px;
+    }
+    .admin-actions__button-export {
+        margin-bottom: 15px;
+    }
+    .pagination {
+        margin-bottom: 15px;
+    }
+    .btn {
+        width: 40px;
+        height: 40px;
+    }
+    .search-form__actions {
+        margin: 20px 0;
+    }
+    .info-table {
+        margin-bottom: 0;
+    }
+    .modal__content {
+        padding: 10px 25px;
+    }
+}
+
+/* スマホ */
+@media screen and (max-width: 768px) {
+    body {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+    .search-form__header-title {
+        font-size: 25px;
+    }
+
+    .search__content {
+        width: 95%;
+    }
+
+    .search-result__table th {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .search-result__table td {
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .search-form__button-reset {
+        padding: 15px 5px;
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .search-form__button-search {
+        width: 20%;
+        font-size: 14px;
+    }
+
+    .search-form__actions {
+        margin-top: 10px;
+        gap: 50px;
+    }
+    .search-result__table button {
+        padding: 5px;
+    }
+
+    .admin-actions__button-export {
+        font-size: 8px;
+        font-weight: bold;
+    }
+
+    .admin-actions {
+        flex-direction: row-reverse;
+    }
+    /* テーブルが横スクロールできるようにする */
+    .search-result__container {
+        width: 100%;
+        overflow-x: auto;
+    }
+    .search-result__table {
+        min-width: 600px;
+    }
+
+    .search-form__container {
+        flex-direction: column;
+        gap: 10px;
+        padding: 0;
+    }
+    .search-form__field,
+    .search-form__actions {
+        width: 100%;
+    }
+
+    .header__container {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .header__form--logout {
+        font-size: 16px;
+        padding: 5px 10px;
+    }
+
+    /* ページネーションを中央寄せ */
+    .pagination ul {
+        gap: 0;
+    }
+    .modal__content {
+        font-size: 12px;
+        width: 400px;
+    }
+    .info-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    .info-table the {
+        border: none;
+    }
+
+    .info-table tr {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .info-table td:first-child {
+        display: block;
+        font-weight: bold;
+        margin-bottom: 3px;
+    }
+
+    .info-table td:last-child {
+        display: block;
+        word-break: break-word;
+    }
+}
